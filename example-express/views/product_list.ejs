@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Minute Coffee - Products</title>
+    </head>
+    <body>
+        <main>
+            <!-- TODO: Header / navigation -->
+            <%- include("partials/header.ejs") %>
+            <form action="product_list" method="get"
+                class="search-form">
+                <input type="text" name="search_term"
+                    id="search-form">
+                <input type="submit" value="Search">
+            </form>
+            <section class="coffee-list">
+                <% for (const product of products) { %>
+                <article class="coffee-card">
+                    <img src="img/coffee.jpg"
+                        alt="Takeaway coffee cup">
+                    <h2><%= product.name %></h2>
+                    <span>$<%= product.price %></span>
+                    <p><%= product.description %></p>
+                    <a
+                        href="product_checkout?id=<%= product.id %>">Buy</a>
+                </article>
+                <% } %>
+            </section>
+            <!-- TODO: Footer -->
+            <%- include("partials/footer.ejs") %>
+        </main>
+    </body>
+</html>
