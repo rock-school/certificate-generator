@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Get Certificate</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div class="formDiv">
+            <form class="mainForm" onsubmit="return false">
+                <div class="nameOfForm">Get your certificate</div>
+                <div class="YourSex">
+                    <h3>Sex</h3>
+                    <select class="chooseSex" name="sex" required="required">
+                        <option value="">Choose</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="name">
+                    <h3>Your name</h3>
+                    <input type="text" name="name" required="required" placeholder="Name">
+                </div>
+                <div class="email">
+                    <h3>Your email</h3>
+                    <input type="email" name="email" required="required" placeholder="Your email">
+                </div>
+                <div class="nameCourse">
+                    <h3>Name of the course</h3>
+                    <textarea name="message" placeholder="Name of the course"></textarea>
+                </div>
+                <div>
+
+                    <input type="checkbox" required="required" >
+                    <span class="agreement">Consent to the processing of personal data</span>
+                </div>
+          
+                <button type="submit" class="button" id="btn">
+                    <span><i class="material-icons">send</i></span>
+                    <span class="left">Send</span>
+                </button>
+                <!-- Галка на согласие обработки личных данных -->
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
