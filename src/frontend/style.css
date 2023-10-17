@@ -158,9 +158,23 @@ textarea {
       transform: scale(4);
     }
   }
-
+.nameCourse label {
+    display: flex;
+}
 
 .agreement {
+    font-weight: bold;
+}
+
+.personalData {
+    margin-top: 20px;
+}
+
+.coursesText {
+    font-weight: bold;
+}
+
+.nameCourse {
     font-weight: normal;
 }
 
