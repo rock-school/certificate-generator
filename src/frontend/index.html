@@ -11,31 +11,33 @@
 <body>
     <main class="main">
         <div class="formDiv">
-            <form class="mainForm" onsubmit="return false">
+            <form class="mainForm" onsubmit="return false" id="sertificate">
                 <div class="nameOfForm">Get your certificate</div>
-                <div class="YourSex">
-                    <h3>Sex</h3>
-                    <select class="chooseSex" name="sex" required="required">
-                        <option value="">Choose</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                </div>
                 <div class="name">
                     <h3>Your name</h3>
-                    <input type="text" name="name" required="required" placeholder="Name">
+                    <input type="text" name="name" required="required" placeholder="Name" value="">
                 </div>
                 <div class="email">
                     <h3>Your email</h3>
-                    <input type="email" name="email" required="required" placeholder="Your email">
+                    <input type="email" name="email" required="required" placeholder="Your email" value="">
                 </div>
                 <div class="nameCourse">
-                    <h3>Name of the course</h3>
-                    <textarea name="message" placeholder="Name of the course"></textarea>
+                    <div class="coursesText">Choose your course</div>
+                    <label for="HTML+CSS">
+                        <input type="checkbox" name="course" value="html+css">HTML + CSS
+                    </label>
+                    <label for="Javascript">
+                        <input type="checkbox" name="course" value="javascript">Javascript
+                    </label>
+                    <label for="Angular">
+                        <input type="checkbox" name="course" value="angular">Angular
+                    </label>
+                    <label for="Typescript">
+                        <input type="checkbox" name="course" value="typescript">Typescript
+                    </label>
                 </div>
-                <div>
-
-                    <input type="checkbox" required="required" >
+                <div class="personalData">
+                    <input type="checkbox" required="required" name="personal_data" >
                     <span class="agreement">Consent to the processing of personal data</span>
                 </div>
           
